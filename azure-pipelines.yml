@@ -10,9 +10,9 @@ trigger:
 #   vmImage: ubuntu-latest
 
 pool:
-  name: MyPool
-  demands:
-    - Agent.Version -gtVersion 2.182.1
+  name: Default
+  # demands:
+  #   - Agent.Version -gtVersion 2.182.1
 
 
 steps:
