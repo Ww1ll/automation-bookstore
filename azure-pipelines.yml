@@ -9,8 +9,11 @@ trigger:
 # pool: 
 #   vmImage: ubuntu-latest
 
-pool: 
-  MyPool
+pool:
+  name: MyPool
+  demands:
+    - Agent.Version -gtVersion 2.182.1
+
 
 steps:
 - task: ArchiveFiles@2
